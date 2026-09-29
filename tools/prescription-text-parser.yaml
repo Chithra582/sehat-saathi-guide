@@ -1,0 +1,13 @@
+name: "prescription-text-parser"
+description: "Parses raw OCR extracted text into structured medicine names, dosages, and daily reminder schedules."
+input_schema:
+  type: "object"
+  properties:
+    raw_ocr_text:
+      type: "string"
+      description: "Raw text output extracted from prescription image."
+    minimum_confidence:
+      type: "number"
+      description: "Minimum OCR confidence score required for automatic reminder creation (default: 0.85)."
+  required:
+    - "raw_ocr_text"

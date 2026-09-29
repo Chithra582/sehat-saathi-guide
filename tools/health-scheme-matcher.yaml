@@ -1,0 +1,19 @@
+name: "health-scheme-matcher"
+description: "Matches user demographic criteria against public health schemes and retrieves empanelled hospital directories."
+input_schema:
+  type: "object"
+  properties:
+    state_code:
+      type: "string"
+      description: "Two-letter Indian state code (e.g., UP, BR, MH, WB, TN)."
+    income_bracket:
+      type: "string"
+      enum: ["bpl", "low_income", "middle_income", "general"]
+      description: "Socio-economic income bracket of the applicant."
+    scheme_category:
+      type: "string"
+      enum: ["pmjay", "jan_aushadhi", "state_insurance", "maternal_care"]
+      description: "Target healthcare assistance category."
+  required:
+    - "state_code"
+    - "income_bracket"

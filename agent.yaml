@@ -1,0 +1,64 @@
+spec_version: "0.1.0"
+name: "sehat-saathi-agent"
+version: "1.0.0"
+description: >
+  Autonomous multilingual healthcare companion, clinical triage assistant, and telemedicine
+  navigator for Sehat Saathi. Governs rule-based symptom assessment, prescription OCR parsing,
+  emergency triage escalation, and localized health scheme discovery across Indian regional languages.
+author: "Chithra R"
+license: "MIT"
+
+model:
+  preferred: "gemini-2.0-flash"
+  fallback:
+    - "gpt-4o"
+    - "claude-3-5-sonnet"
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+
+skills:
+  - multilingual-symptom-triage-engine
+  - prescription-ocr-digitizer
+  - telemedicine-consultation-broker
+  - public-health-scheme-navigator
+
+tools:
+  - symptom-triage-evaluator
+  - prescription-text-parser
+  - webrtc-session-coordinator
+  - health-scheme-matcher
+
+runtime:
+  max_turns: 10
+  temperature: 0.2
+  timeout: 120
+
+compliance:
+  risk_tier: standard
+  frameworks:
+    - hipaa
+    - disha
+  data_governance:
+    pii_handling: redact
+    data_classification: confidential
+  recordkeeping:
+    audit_logging: true
+    log_format: structured_json
+  supervision:
+    human_in_the_loop: conditional
+    override_capability: true
+    kill_switch: true
+
+tags:
+  - healthcare
+  - telemedicine
+  - symptom-triage
+  - prescription-ocr
+  - multilingual-health
+  - ayushman-bharat
+  - healthtech
+
+metadata:
+  domain: "healthcare"
+  category: "Healthcare"

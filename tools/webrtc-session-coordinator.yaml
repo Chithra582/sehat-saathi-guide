@@ -1,0 +1,17 @@
+name: "webrtc-session-coordinator"
+description: "Generates ephemeral WebRTC consultation tokens and verifies encrypted signaling configurations."
+input_schema:
+  type: "object"
+  properties:
+    doctor_id:
+      type: "string"
+      description: "Verified practitioner identification token."
+    patient_id:
+      type: "string"
+      description: "Anonymized patient consultation identifier."
+    session_duration_minutes:
+      type: "integer"
+      description: "Maximum consultation window duration in minutes (default: 60)."
+  required:
+    - "doctor_id"
+    - "patient_id"

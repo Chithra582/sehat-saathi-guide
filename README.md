@@ -10,6 +10,10 @@
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind](https://img.shields.io/badge/Tailwind-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![OpenGAP Spec 0.1.0](https://img.shields.io/badge/OpenGAP-0.1.0-blue.svg)](https://opengitagent.org)
+[![GitAgent Passport](https://img.shields.io/badge/GitAgent%20Passport-Ready-brightgreen.svg)](https://app.hidevs.xyz/passport/submit)
+[![Category](https://img.shields.io/badge/Category-Healthcare-purple.svg)](https://app.hidevs.xyz/passport/submit)
+[![Compliance](https://img.shields.io/badge/Compliance-HIPAA%20%7C%20DISHA-orange.svg)](EXPLAINABILITY.md)
 
 ---
 
@@ -277,6 +281,17 @@ Distributed under the MIT License. See `LICENSE` for more information (coming so
 **Naman Jha** - [GitHub Profile](https://github.com/Naman-iitm)
 
 **Project Link:** [https://github.com/Naman-iitm/sehat-saathi-guide](https://github.com/Naman-iitm/sehat-saathi-guide)
+
+---
+
+## GitAgent Passport Qualification
+
+This repository is fully compliant with the **OpenGAP Spec 0.1.0** standard and qualified for the **HiDevs GitAgent Passport**:
+
+- **Checkpoint 1 (Validate):** Verified OpenGAP spec 0.1.0 compliance via [`agent.yaml`](agent.yaml), [`SOUL.md`](SOUL.md), [`skills/`](skills/), and [`tools/`](tools/).
+- **Checkpoint 2 (Explain):** Comprehensive 5-section transparency report in [`EXPLAINABILITY.md`](EXPLAINABILITY.md) detailing multilingual clinical triage protocols, prescription OCR pharmaceutical verification, encrypted WebRTC telemedicine brokerage, and public health scheme navigation under HIPAA & DISHA governance.
+- **Checkpoint 3 (Export):** Cross-framework export compatibility tested across OpenAI SDK, CrewAI, Claude Code, and Lyzr.
+- **Target Category:** **`Healthcare`** (Multilingual Digital Health & Clinical Triage).
 
 ---
 

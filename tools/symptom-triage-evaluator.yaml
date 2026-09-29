@@ -1,0 +1,19 @@
+name: "symptom-triage-evaluator"
+description: "Evaluates symptom descriptions against emergency red flags and assigns clinical urgency tiers."
+input_schema:
+  type: "object"
+  properties:
+    symptoms:
+      type: "array"
+      items:
+        type: "string"
+      description: "List of user-reported symptoms or health complaints."
+    patient_age:
+      type: "integer"
+      description: "Age of patient in years."
+    language_code:
+      type: "string"
+      enum: ["hi", "en", "bn", "mr", "bho", "mai"]
+      description: "Language code for localized triage response."
+  required:
+    - "symptoms"
